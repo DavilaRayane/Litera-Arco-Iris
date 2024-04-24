@@ -1,0 +1,72 @@
+@media screen and (max-width: 800px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 3% 14% 17% 11% 16% 16% 15% 8%;
+    grid-template-areas:
+      "menu"
+      "sobre"
+      "kits"
+      "fundo"
+      "depoimento-1"
+      "depoimento-2"
+      "plano"
+      "footer";
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+    .menu{
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: column;
+    	align-items: center;
+      width: 100%;
+      text-align: center;
+    }
+    .menu .logo {
+    font-size: auto;
+    text-align: center;
+    margin-left: 0px;
+    }
+    .menu nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    }
+
+  .menu nav ul li {
+    margin-left: 40px;
+  }
+    .sobre, .kits, .fundo, .depoimento-1, .depoimento-2, .plano-assinatura, .footer {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .background-image {
+  grid-area: fundo;
+  height: 100%;
+  width: 100%;
+  }
+  .kits .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  }
+  .depoimento-1 .coluna .caixa, .depoimento-2 .caixa {
+    width: 80%;
+    height: auto;
+  }
+  .plano-assinatura .titulo, .plano-assinatura .caixa {
+    width: 80%;
+    height: auto;
+  }
+}
